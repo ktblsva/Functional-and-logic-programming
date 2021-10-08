@@ -1,0 +1,7 @@
+(cadr (cadaar '(((1 (2 *)) 3) 4)))
+(cons nil nil)
+(cons 1 (cons(cons 2 (cons 3 nil)) nil))
+(list 1 (list 2 3))
+(defun swapfl(l)
+ (append (last l) (cdr (butlast l)) (list(car l)))
+)
